@@ -1,7 +1,7 @@
 # flakes
 Nix flakes
 
-replace the hardware file with your own
+add your hardware-configuration.nix file to this folder
 
 assuming this repo is in /home/tyler/github/nix/
 
