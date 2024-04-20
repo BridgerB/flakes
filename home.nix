@@ -288,7 +288,7 @@
         "font-size" = 24;
         "indicator-radius" = 50;
         "show-failed-attempts" = true;
-        image = "${config.home.homeDirectory}/github/nix/stars.jpg";
+        image = "${config.home.homeDirectory}/github/flakes/stars.jpg";
         "indicator-thickness" = "5";
         line-color = "2d1209";
         ring-color = "2d1209";
@@ -357,7 +357,7 @@
         }
       ];
       output.DP-3 = {
-        bg = "${config.home.homeDirectory}/github/nix/stars.jpg fill";
+        bg = "${config.home.homeDirectory}/github/flakes/stars.jpg fill";
       };
       window = {
         titlebar = false;
@@ -435,7 +435,7 @@
         };
       };
       extraConfig = ''
-        bindsym Pause exec i3lock -f -i ${config.home.homeDirectory}/github/nix/stars.jpg
+        bindsym Pause exec i3lock -f -i ${config.home.homeDirectory}/github/flakes/stars.jpg
         bindsym Print exec xfce4-screenshooter
         bindsym Mod1+space exec thunar;
         bindsym Mod1+Return exec brave;

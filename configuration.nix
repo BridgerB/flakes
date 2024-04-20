@@ -56,18 +56,18 @@
       enable = true;
       shellAliases = {
         home = ''
-          alejandra /home/tyler/github/nix/ &>/dev/null
-          sudo -E hx /home/tyler/github/nix/home.nix
+          alejandra /home/tyler/github/flakes/ &>/dev/null
+          sudo -E hx /home/tyler/github/flakes/home.nix
         '';
         config = ''
-          alejandra /home/tyler/github/nix/ &>/dev/null
-          sudo -E hx /home/tyler/github/nix/configuration.nix
+          alejandra /home/tyler/github/flakes/ &>/dev/null
+          sudo -E hx /home/tyler/github/flakes/configuration.nix
         '';
         rebuild = ''
-          cd /home/tyler/github/nix/
+          cd /home/tyler/github/flakes/
           git --no-pager diff -U0 *.nix
-          alejandra /home/tyler/github/nix/ &>/dev/null
-          sudo nixos-rebuild switch --flake '/home/tyler/github/nix/#tyler';
+          alejandra /home/tyler/github/flakes/ &>/dev/null
+          sudo nixos-rebuild switch --flake '/home/tyler/github/flakes/#tyler';
         '';
         gpt = ''
           for file in *; do echo -e "===''${file}===

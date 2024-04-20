@@ -3,10 +3,10 @@ Nix flakes
 
 add your hardware-configuration.nix file to this folder
 
-assuming this repo is in /home/tyler/github/nix/
+assuming this repo is in /home/tyler/github/flakes/
 
 ```
-sudo nixos-rebuild switch --flake '/home/tyler/github/nix/#tyler';
+sudo nixos-rebuild switch --flake '/home/tyler/github/flakes/#tyler';
 ```
 
 'home' to edit home config  
